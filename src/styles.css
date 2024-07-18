@@ -1,0 +1,640 @@
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  transition: width 1s, height 1s, padding 1s, margin 0,5s;
+}
+
+.menu{
+  background-color: #ccc;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.submenu{
+  font-size: 15px;
+  background-color: #8a8686;
+  width: 93.3%;
+  height: 6.5%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contenedorapp{
+  display: flex;
+  flex-direction: row;
+  height: 103%;
+  gap: 5px;
+}
+
+.left-menu{
+  transition: width 0.5s, height 0.5s;
+  border: 2px solid rgb(189, 188, 188);
+  font-size: 15px;
+  overflow-y: auto;
+  scrollbar-width:thin; 
+  width: 10%;
+  height: 97%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app {
+  position: relative;
+  width: 66%;
+  height: 102%;
+  background-color: rgba(190, 190, 190, 0.716);
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-menu {
+  transition: width 0.5s, height 0.5s;
+  background-color: rgba(190, 190, 190, 0.716);
+  overflow-y: auto;
+  height: 100%;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.purchase-item{
+  border: 1px solid rgb(159, 156, 156);
+  background-color: #cac2c2;
+  padding: 10px;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+}
+
+.purchase-item .imageprenda{
+  background-color: #fff;
+  width: 30%;
+  flex-direction: row;
+}
+
+.purchase-item .imageprenda2{
+  background-color: #fff;
+  height: 190px;
+  width: 40%;
+  flex-direction: row;
+}
+
+.purchase-item .imageprenda3{
+  background-color: #fff;
+  height: 190px;
+  width: 40%;
+  flex-direction: row;
+}
+
+
+.purchase-item .infoprenda{
+  background-color: #cac2c2;
+  padding: 10px;
+  width: 90%;
+}
+
+.left-menu .menu-item{
+  background-color: #cbc8c8;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  text-align: center;
+}
+
+.right-menu .purchase-item .imageprenda img {
+  width: 120px;
+  height: 150px;
+}
+
+.right-menu .purchase-item .imageprenda2 img {
+  margin-left: 25px;
+  margin-top: 12px;
+  width: 65px;
+  height: auto;
+}
+
+.right-menu .purchase-item .imageprenda3 img {
+  width: 100px;
+  height: auto;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.left-menu .menu-item{
+  display: flex;
+  width: 100px;
+  height: 120px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fullwindow {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.options {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.izquierda, .derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.izquierda {
+  margin-right: 20px;
+}
+
+.derecha {
+  margin-left: 20px;
+}
+
+.centro {
+  display: flex;
+  margin-left: -60px;
+  height: 100%;
+  width: 300px;
+}
+
+.prenda1, .prenda3 {
+  width: 120px;
+  height: 180px;
+  display: inline-block; 
+}
+
+.prenda1 img, .prenda3 img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.prenda2, .prenda4 {
+  width: 80px;
+  height: 200px;
+  display: inline-block; 
+}
+
+.prenda2 img, .prenda4 img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.left-buttons, .right-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
+.left-buttons {
+  left: 0px;
+}
+
+.right-buttons {
+  right: 0px;
+}
+
+.button {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.avatar-list-overlay {
+  flex-direction: row;
+  position: absolute;
+  display: flex; 
+  width: 1488px;
+  height: 78%;
+  z-index: 11;
+}
+
+.closelista{
+  display: inline-block; 
+  position: relative;
+}
+
+.closelista button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 585px;
+  width: 50px;
+}
+
+.contenedoravatares{
+  overflow-y: auto;
+  scrollbar-width:thin; 
+  width: 1485px;
+  height: 101%;
+  position: relative;
+  background-color: #b5b0b0;
+  display: flex;
+  flex-direction: row;
+}
+
+.Avat{
+  margin: 10px;
+  background-color: #706f6f;
+}
+
+.text-changeavatar{
+  font-size: 20px;
+  position: absolute;
+  margin-top: -2px;
+  right: 42%;
+  left: 42%;
+}
+
+.avatar-list-overlay img{
+  display: flex;
+  width: 300px;
+  height: 81%;
+  z-index: 10;
+}
+
+.infoandchange{
+  background-color: #b5b0b0;
+  display: flex;
+  margin: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-image {
+  width: 40%;
+  height: 70%;
+  border: 1px solid rgb(215, 214, 214);
+}
+
+.left-menu .menu-item .tops{
+  width: 60px;
+  height: 80px;
+  border: 1px solid rgb(215, 214, 214);
+}
+
+.left-menu .menu-item .buttoms{
+  width: 30%;
+  height: 80px;
+  border: 1px solid rgb(215, 214, 214);
+}
+
+.left-menu .menu-item .dresses{
+  width: 30%;
+  height: 80px;
+  border: 1px solid rgb(215, 214, 214);
+}
+
+
+
+.contenedor-principal.full-window-mode {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+}
+
+
+.contenedor-principal.full-window-mode .submenu{
+  font-size: 15px;
+  z-index: 10;
+  background-color: #8a8686;
+  width: 93.3%;
+  height: 5%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.contenedor-principal.full-window-mode .app {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction:row;
+  gap: 10px;
+}
+
+.contenedor-principal.full-window-mode .right-menu {
+  overflow-y: auto;
+  scrollbar-width:thin; 
+  width: 40%;
+  height: 100%;
+  padding: 7px;
+  display: flex;
+  flex-direction:column;
+}
+.contenedor-principal.full-window-mode .left-menu {
+  overflow-y: auto;
+  scrollbar-width:thin; 
+  width: 10%;
+  height: 90%;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  flex-direction:column;
+  font-size: 15px;
+  gap: 20px;
+}
+
+.contenedor-principal.full-window-mode .derecha {
+  margin-top: -50px;
+  width: 20%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.contenedor-principal.full-window-mode .izquierda {
+  margin-top: -50px;
+  width: 20%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.contenedor-principal.full-window-mode .centro {
+  display: flex;
+  align-items: center;
+  margin-top: -30px;
+  height: 80%;
+  width: 300px;
+}
+
+.contenedor-principal.full-window-mode .centro canvas {
+  height: 125%;
+  width: 500px;
+  margin-left: -45px;
+}
+
+.contenedor-principal.full-window-mode .izquierda .prenda1 {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-principal.full-window-mode .izquierda .prenda2 {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-principal.full-window-mode .derecha .prenda3 {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-principal.full-window-mode .derecha .prenda4 {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fullwindow button[type="button"] {
+  position: fixed;
+  z-index: 10;
+}
+
+.contenedor-principal.full-window-mode .avatar-list-overlay {
+  flex-direction: row;
+  position: absolute;
+  display: flex; 
+  width: 1488px;
+  height: 78%;
+  z-index: 11;
+}
+
+.contenedor-principal.full-window-mode .closelista{
+  display: inline-block; 
+  position: relative;
+}
+
+.contenedor-principal.full-window-mode .closelista button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 705px;
+  width: 50px;
+}
+
+.contenedor-principal.full-window-mode .contenedoravatares{
+  overflow-y: auto;
+  scrollbar-width:thin; 
+  width: 1485px;
+  height: 122%;
+  position: relative;
+  background-color: #b5b0b0;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.contenedor-principal.full-window-mode .avat{
+  margin: 20px;
+  background-color: #706f6f;
+}
+
+.contenedor-principal.full-window-mode .infoandchange{
+  background-color: #b5b0b0;
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-principal.full-window-mode .text-changeavatar{
+  font-size: 20px;
+  position: absolute;
+  margin-top: -2px;
+  right: 42%;
+  left: 42%;
+}
+
+.contenedor-principal.full-window-mode .avatar-list-overlay img{
+  display: flex;
+  width: 400px;
+  height: 80%;
+  z-index: 10;
+}
+
+
+.tops-content {
+  border: 2px solid rgb(21, 142, 6);
+  height: 100%;
+  width: 700vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c1b9b9;
+}
+
+.tops-content h2 {
+  border: 2px solid red;
+  margin-top: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.tops-content div {
+  overflow-y: auto;
+  scrollbar-width:thin; 
+  border: 2px solid blue;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tops-content div > div {
+  border: 2px solid blue;
+  margin: 10px;
+  width: 200px;
+  height: 250px;
+  cursor: pointer;
+}
+
+.tops-content div > div:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tops-content img {
+  border: 2px solid blue;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.tops-content p {
+  border: 2px solid blue;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.tops-content button {
+  padding: 5px 10px;
+  margin: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tops-content button:hover {
+  background-color: #3e8e41;
+}
+
+.left-menu-expanded {
+  width: 100%; /* Ancho expandido */
+}
+
+.left-menu-expanded .left-menu{
+  border: 2px solid rgb(189, 188, 188);
+  font-size: 15px;
+  overflow-y: auto;
+  scrollbar-width:thin; 
+  width: 80%;
+  height: 97%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-menu-expanded .right-menu{
+  background-color: rgba(190, 190, 190, 0.716);
+  overflow-y: auto;
+  height: 100%;
+  width: 300%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-menu-expanded .app {
+  position: relative;
+  width: 100%;
+  height: 102%;
+  background-color: rgba(190, 190, 190, 0.716);
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.left-menu-expanded .app .izquierda,
+.left-menu-expanded .app .derecha,
+.left-menu-expanded .app .left-buttons,
+.left-menu-expanded .app .right-buttons {
+  display: none; 
+}
+
+.left-menu-expanded .app .fullwindow{
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.left-menu-expanded .app .options{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.left-menu-expanded .app .centro {
+  display: block; /* Muestra el elemento */
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.left-menu-expanded .app .centro canvas {
+  height: 99%;
+  width: 400px;
+  margin-top: 3PX;
+  margin-left: 10px;
+  margin-right: -10px;
+}
+
